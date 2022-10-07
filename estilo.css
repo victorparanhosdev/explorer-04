@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-black: #000000;
+    --color-verde: #00BFA6;
+    --color-background: #2F2E41;
+    --color-cinza: #C2C2C2;
+    --color-branco: #FFFFFF;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: var(--color-branco);
+    transition: color 0.4s;
+}
+a:hover {
+    transition-timing-function: ease-in-out;
+    transition: color 0.2s;
+    color: var(--color-verde);
+    
+}
+
+ul {
+    display: flex;
+    gap: 64px;
+    list-style: none;
+}
+
+body{
+    background-color: var(--color-background);
+    max-width: 1100px;
+    margin: auto;
+    font-family: 'JetBrains Mono', monospace;
+   
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: 60px;
+    margin-bottom: 100px;
+
+ 
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    animation-name: logoanimado;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes logoanimado {
+    from{
+        
+        transform: scale(1.0);
+
+    }
+
+    to {
+        color: #00BFA6;
+        transform: scale(1.1);
+
+    }
+    
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+section {
+    text-align: center;
+   
+}
+
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--color-branco);
+    margin-bottom: 60px;
+}
+
+
+span {
+    color: var(--color-verde);
+}
+
+p { 
+    width: 600px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-cinza)
+}
+
+p span {
+    font-weight: bold;
+}
+.line{
+    height: 0;
+    width: 570px;
+
+    margin: 150px auto 20px;
+    border: 1px solid;
+    color: var(--color-verde);
+
+}
+#padlock {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+footer{
+    text-align: center;
+    color: var(--color-branco);
+    font-weight: 500;
+
+}
+
+.cadeado {
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    background: url("./imagens/padlock-decoration.svg") no-repeat;
+}
+
